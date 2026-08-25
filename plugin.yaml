@@ -1,0 +1,25 @@
+name: wallust-theme
+version: 1.1.0
+manifest_version: 2
+api_version: 1
+description: Generate a Hermes skin from the current wallpaper using wallust (k-means / salience / ANSI palettes) and apply it live to CLI, TUI, and desktop.
+author: Mirikawww
+license: MIT
+homepage: https://github.com/Mirikawww/hermes-plugin-wallust-theme
+tags: [theme, wallpaper, wallust, desktop, skin]
+provides_tools:
+  - wallust_theme_apply
+  - wallust_theme_status
+config_schema:
+  auto_watch:
+    type: bool
+    default: false
+    description: Watch the GNOME wallpaper from inside Hermes (redundant if wallust-wallpaper-watch is running).
+  style:
+    type: str
+    default: auto
+    description: "Palette polarity: auto (follow GNOME), dark, or light."
+  skin_name:
+    type: str
+    default: wallust
+    description: Hermes skin name written to $HERMES_HOME/skins/<name>.yaml.

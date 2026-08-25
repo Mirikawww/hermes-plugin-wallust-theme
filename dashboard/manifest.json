@@ -1,0 +1,8 @@
+{
+  "name": "wallust-theme",
+  "label": "Wallust Theme",
+  "description": "Generate a Hermes skin from the current wallpaper using wallust",
+  "icon": "Palette",
+  "version": "1.1.0",
+  "api": "plugin_api.py"
+}
